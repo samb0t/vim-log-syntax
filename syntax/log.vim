@@ -18,6 +18,7 @@ syn match log_error     '\<\(FATAL\|ERROR\|ERRORS\|FAIL\|FAILED\|FAILURE\)' cont
 syn match log_warning   '\<\(WARNING\|WARN\)' containedin=log_all
 syn match log_info      '\<\(INFO\)' containedin=log_all
 syn match log_debug     '\<\(DEBUG\|TRACE\)' containedin=log_all
+syn match log_stack     '^\tat .*\<\(forte\|e2go\|percipenz\).*$'
 
 hi def link log_string  String
 hi def link log_date    Number
